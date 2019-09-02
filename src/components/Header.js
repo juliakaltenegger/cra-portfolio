@@ -1,25 +1,24 @@
-import React from 'react';
+import React from "react";
 
 let data = {
-  name: 'Rahul Bhatia',
-  role: 'Frontend Developer and Data Scientist',
-  roleDescription:
-    'I like dabbling in various parts of frontend development and like to learn about new technologies, write technical articles or simply play games in my free time.',
+  name: "Julia Kaltenegger",
+  role: "UX / UI designer & (hopefully) soon-to-be Frontend Developer",
+  roleDescription: "I like developing concepts for websites XXXX.",
   socialLinks: [
     {
-      name: 'linkedin',
-      url: 'https://www.linkedin.com/in/rahul-bhatia-67ba08121/',
-      className: 'fa fa-linkedin'
+      name: "linkedin",
+      url: "https://www.linkedin.com/in/rahul-bhatia-67ba08121/",
+      className: "fa fa-linkedin"
     },
     {
-      name: 'github',
-      url: 'http://github.com/rbhatia46',
-      className: 'fa fa-github'
+      name: "github",
+      url: "http://github.com/rbhatia46",
+      className: "fa fa-github"
     },
     {
-      name: 'skype',
-      url: 'http://twitter.com/rbhatia46',
-      className: 'fa fa-twitter'
+      name: "skype",
+      url: "http://twitter.com/rbhatia46",
+      className: "fa fa-twitter"
     }
   ]
 };
@@ -54,7 +53,7 @@ export default function Header() {
         <div className="row banner">
           <div className="banner-text">
             <h1 className="responsive-headline">I am {data.name}.</h1>
-            <h3 style={{ color: '#fff', fontFamily: 'sans-serif ' }}>
+            <h3 style={{ color: "#fff", fontFamily: "sans-serif " }}>
               I am a {data.role}.{data.roleDescription}
             </h3>
             <hr />

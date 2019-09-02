@@ -1,12 +1,12 @@
-import React from 'react';
-import profilePic from './profilepic.jpg';
+import React from "react";
+import profilePic from "./profile-pic.jpg";
 
 let data = {
-  name: 'Rahul Bhatia',
+  name: "Julia Kaltenegger",
   aboutme:
-    'I am currently a pre-final year student at The LNM Institute of Information Technology and pursuing my B.Tech from here. I am a self taught Full Stack Web Developer, currently diving deeper into Machine Learning. I believe that to be successful in life, one needs to be obsessive with their dreams and keep working towards them.',
-  address: 'India',
-  website: 'https://rbhatia46.github.io'
+    "I am currently participating in a 3-months coding bootcamp by UpLeveled. With the additional qualifications I am acquiring here, I am aiming at creating a competitive advantage in order to advance in my career as a UX / UI designer.",
+  address: "Vienna, Austria",
+  website: "https://julialearnscoding.github.io"
 };
 
 export default function About() {
