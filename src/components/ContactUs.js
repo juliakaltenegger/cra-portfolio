@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
 let data = {
-  linkedinId: 'Your LinkedIn Id'
+  linkedinId: "julia-e-kaltenegger"
 };
 
 export default function ContactUs() {
@@ -9,9 +9,7 @@ export default function ContactUs() {
     <section id="contact">
       <div className="row section-head">
         <div className="ten columns">
-          <p className="lead">
-            Feel free to contact me for any work or suggestions below
-          </p>
+          <p className="lead">Feel free to get in touch!</p>
         </div>
       </div>
       <div className="row">

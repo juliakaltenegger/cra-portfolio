@@ -3,10 +3,8 @@ import profilePic from "./profile-pic.jpg";
 
 let data = {
   name: "Julia Kaltenegger",
-  aboutme:
-    "I am currently participating in a 3-months coding bootcamp by UpLeveled. With the additional qualifications I am acquiring here, I am aiming at creating a competitive advantage in order to advance in my career as a UX / UI designer.",
   address: "Vienna, Austria",
-  website: "https://julialearnscoding.github.io"
+  email: "Email: julia.e.kaltenegger@gmail.com"
 };
 
 export default function About() {
@@ -19,7 +17,13 @@ export default function About() {
 
         <div className="nine columns main-col">
           <h2>About Me</h2>
-          <p>{data.aboutme}</p>
+          <p>
+            "I am currently participating in a 3-months coding bootcamp by{" "}
+            <a href="https://www.upleveled.io">UpLeveled</a>. Taking advantage
+            of the additional qualifications I am acquiring here, I am aiming at
+            creating a competitive advantage in order to advance in my career as
+            a UX / UI designer."
+          </p>
 
           <div className="row">
             <div className="columns contact-details">
@@ -29,7 +33,10 @@ export default function About() {
                 <br></br>
                 <span>{data.address}</span>
                 <br></br>
-                <span>{data.website}</span>
+
+                <a href="mailto:julia.e.kaltenegger@gmail.com">
+                  <span> {data.email}</span>
+                </a>
               </p>
             </div>
           </div>

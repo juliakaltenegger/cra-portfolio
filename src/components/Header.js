@@ -1,26 +1,13 @@
 import React from "react";
+import githubLogo from "./github.svg";
+import twitterLogo from "./twitter.svg";
+import instagramLogo from "./instagram.svg";
+import linkedinLogo from "./linkedin.svg";
 
 let data = {
-  name: "Julia Kaltenegger",
+  name: "Julia E. Kaltenegger",
   role: "UX / UI designer & (hopefully) soon-to-be Frontend Developer",
-  roleDescription: "I like developing concepts for websites XXXX.",
-  socialLinks: [
-    {
-      name: "linkedin",
-      url: "https://www.linkedin.com/in/rahul-bhatia-67ba08121/",
-      className: "fa fa-linkedin"
-    },
-    {
-      name: "github",
-      url: "http://github.com/rbhatia46",
-      className: "fa fa-github"
-    },
-    {
-      name: "skype",
-      url: "http://twitter.com/rbhatia46",
-      className: "fa fa-twitter"
-    }
-  ]
+  roleDescription: ""
 };
 
 export default function Header() {
@@ -52,22 +39,32 @@ export default function Header() {
 
         <div className="row banner">
           <div className="banner-text">
-            <h1 className="responsive-headline">I am {data.name}.</h1>
+            <h1 className="responsive-headline"> {data.name}.</h1>
             <h3 style={{ color: "#fff", fontFamily: "sans-serif " }}>
-              I am a {data.role}.{data.roleDescription}
+              {data.role}.{data.roleDescription}
             </h3>
             <hr />
             <ul className="social">
-              {data.socialLinks &&
-                data.socialLinks.map(item => {
-                  return (
-                    <li key={item.name}>
-                      <a href={item.url} target="_blank">
-                        <i className={item.className}></i>
-                      </a>
-                    </li>
-                  );
-                })}
+              <li>
+                <a href="https://www.linkedin.com/julia-e-kaltenegger">
+                  <img src={linkedinLogo} alt="LinkedIn Logo" />
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/julialearnscoding">
+                  <img src={githubLogo} alt="Github Logo" />
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/julia_k_ailuj">
+                  <img src={twitterLogo} alt="Twitter Logo" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/juelka/">
+                  <img src={instagramLogo} alt="Instagram Logo" />
+                </a>
+              </li>
             </ul>
           </div>
         </div>
