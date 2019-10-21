@@ -6,8 +6,9 @@ import linkedinLogo from "./linkedin.svg";
 
 let data = {
   name: "Julia E. Kaltenegger",
-  role: "UX / UI designer & (hopefully) soon-to-be Frontend Developer",
-  roleDescription: ""
+  role:
+    "Highly motivated professional seeking to combine UX/UI design with frontend development in a job with purpose.",
+  roleDescription: "",
 };
 
 export default function Header() {
@@ -39,9 +40,10 @@ export default function Header() {
 
         <div className="row banner">
           <div className="banner-text">
-            <h1 className="responsive-headline"> {data.name}.</h1>
+            <h1 className="responsive-headline"> {data.name}</h1>
             <h3 style={{ color: "#fff", fontFamily: "sans-serif " }}>
-              {data.role}.{data.roleDescription}
+              {data.role}
+              {data.roleDescription}
             </h3>
             <hr />
             <ul className="social">

@@ -34,10 +34,14 @@ body {
 
 header {
   position: relative;
+  padding-top: 7%;
+  padding-left: 2%;
+  padding-right: 2%;
+
   height: 800px;
   min-height: 500px;
   width: 100%;
-  background: #161415 url(./header-background.jpg) no-repeat top center;
+  background: #161415 url(./header-background2.jpg) no-repeat top center;
   background-size: cover !important;
   -webkit-background-size: cover !important;
   text-align: center;
@@ -49,6 +53,7 @@ header:before {
   content: "";
   vertical-align: middle;
   height: 100%;
+  text-align: center;
 }
 header .banner {
   vertical-align: middle;
@@ -88,12 +93,16 @@ header .banner-text hr {
 
 /* header social links */
 header .social {
+  display: flex;
   margin: 24px 0;
   padding: 0;
   font-size: 30px;
   text-shadow: 0px 1px 2px #fff;
 }
 header .social li {
+  flex: auto;
+  justify-content: space-evenly;
+  list-style: none;
   float: left;
   margin: 0 15px;
   padding: 0;
@@ -149,7 +158,7 @@ header .scrolldown a:hover {
 
 /* nav-wrap */
 #nav-wrap {
-  font-size: 12px;
+  font-size: 13px;
   width: 100%;
   text-transform: uppercase;
   letter-spacing: 2.5px;
@@ -192,6 +201,7 @@ ul#nav li a {
   text-decoration: none;
   text-align: left;
   color: #fff;
+  font-size: 13px;
 
   -webkit-transition: color 0.2s ease-in-out;
   -moz-transition: color 0.2s ease-in-out;
@@ -204,7 +214,7 @@ ul#nav li a:active {
   background-color: transparent !important;
 }
 ul#nav li.current a {
-  color: #f06000;
+  color: #ff008c;
 }
 
 /* ------------------------------------------------------------------ */
@@ -271,7 +281,7 @@ ul#nav li.current a {
 /* d. Resume Section
 /* ------------------------------------------------------------------ */
 
-#resume {
+/* #resume {
   background: #fff;
   padding-top: 90px;
   padding-bottom: 72px;
@@ -307,12 +317,12 @@ ul#nav li.current a {
   padding-right: 10%;
 }
 
-.education,
+/* .education,
 .work {
   margin-bottom: 48px;
   padding-bottom: 24px;
   border-bottom: 1px solid #e8e8e8;
-}
+} 
 #resume .info {
   font-size: 16px;
   color: #6e7881;
@@ -326,19 +336,19 @@ ul#nav li.current a {
 #resume .date {
   font: 15px/24px "opensans-regular", sans-serif;
   margin-top: 6px;
-}
+} */
 
 /*----------------------------------------------*/
 /*	Skill Bars
 /*----------------------------------------------*/
 
-.bars {
+/* .bars {
   width: 95%;
   float: left;
   padding: 0;
   text-align: left;
-}
-.bars .skills {
+} */
+/* .bars .skills {
   margin-top: 36px;
   list-style: none;
 }
@@ -357,8 +367,8 @@ ul#nav li.current a {
   font-weight: normal;
   position: relative;
   top: -36px;
-}
-.bar-expand {
+} */
+/* .bar-expand {
   position: absolute;
   left: 0;
   top: 0;
@@ -370,7 +380,7 @@ ul#nav li.current a {
   height: 42px;
   line-height: 42px;
   border-radius: 3px 0 0 3px;
-}
+} */
 
 /* ------------------------------------------------------------------ */
 /* e. Portfolio Section
@@ -482,7 +492,7 @@ call-to-action .button {
 /* ------------------------------------------------------------------ */
 
 #testimonials {
-  background: #1f1f1f url(./testimonials-bg.jpg) no-repeat center center;
+  background: #1f1f1f url(./testimonials-bg1.jpg) no-repeat center center;
   background-size: cover !important;
   -webkit-background-size: cover !important;
   background-attachment: fixed;
@@ -830,7 +840,7 @@ footer .social-links li:first-child {
   }
   /* nav-wrap */
   #nav-wrap {
-    font: 11px "opensans-bold", sans-serif;
+    font: 13px "opensans-bold", sans-serif;
     letter-spacing: 1.5px;
   }
 
@@ -896,7 +906,7 @@ footer .social-links li:first-child {
   /* mobile navigation
  -------------------------------------------------------------------- */
   #nav-wrap {
-    font: 12px "opensans-bold", sans-serif;
+    font: 13px "opensans-bold", sans-serif;
     background: transparent !important;
     letter-spacing: 1.5px;
     width: auto;

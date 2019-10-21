@@ -2,7 +2,7 @@ import React from "react";
 import profilePic from "./profile-pic.jpg";
 
 let data = {
-  name: "Julia Kaltenegger",
+  name: "Julia E. Kaltenegger",
   address: "Vienna, Austria",
   email: "Email: julia.e.kaltenegger@gmail.com"
 };
