@@ -22,10 +22,10 @@ let data = {
   work: [
     {
       CompanyName: "Ernst & Young",
-      specialization: "Auditing (retail, real estate & automotive)",
+      specialization: "Audit",
       MonthOfLeaving: "Oct",
       YearOfLeaving: "2018",
-      // Achievements: "Some Achievements",
+      Achievements: "Retail, Real Estate & Automotive",
     },
     {
       CompanyName: "kununu",

@@ -1,0 +1,183 @@
+/*-----GENERAL STYLES-----*/
+
+/*so there is no extra-padding*/
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*text & background (everything)*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans Condensed", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #fff;
+}
+
+/*text settings ("code")*/
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/*-----HEADER STYLES-----*/
+
+header {
+  background: #161415 url(./header-background2.jpg) no-repeat top center;
+  background-size: cover !important;
+  -webkit-background-size: cover !important;
+
+  /*padding of first section*/
+  position: relative;
+  padding-top: 15%;
+  padding-left: 2%;
+  padding-right: 2%;
+
+  height: 800px;
+  /* min-height: 500px; */
+  width: 100%;
+
+  text-align: center;
+  overflow: hidden;
+}
+
+/*-------------------------------------NAVIGATION BAR-------------------------------------*/
+#nav-wrap ul,
+#nav-wrap li,
+#nav-wrap a {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  display: inline-block;
+  text-align: center;
+}
+#nav-wrap {
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+
+  /*z-index determines the order of the elements | nav-wrap will be placed in front of elements that are not specified as to their z-index (don't use '-1','-2' etc. no minus!! works but will cause bugs!)*/
+}
+
+#nav {
+  width: auto;
+  min-height: 48px;
+  text-align: center;
+}
+#nav li {
+  /*not sure what this does*/
+  position: relative;
+
+  list-style: none;
+  height: 48px;
+  display: inline-block;
+  /*inline-block makes it horizontal*/
+}
+
+#nav li a {
+  text-decoration: none;
+  color: #fff;
+  line-height: 32px;
+
+  padding: 10px 14px 10px 16px;
+
+  -webkit-transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+#nav li a:hover {
+  background-color: rgba(9, 23, 34, 0.9) !important;
+  border-radius: 20px;
+}
+
+/*:active will only be applied when placed after :hover in code!!!*/
+#nav li a:active {
+  background-color: #1d585c !important;
+}
+/*XXXXXXXXXXX--selection of "current" is not correct--XXXXXXXXX*/
+#nav li.current a {
+  color: #ff008c;
+}
+
+/*---------------------------------------BANNER = name + intro----------------------------------------*/
+
+header .banner {
+  vertical-align: middle;
+  margin: 0 auto;
+  width: 80%;
+  padding-bottom: 30px;
+}
+
+/*-----NAME-----*/
+header .banner-text h1 {
+  font-size: 90px;
+  color: #fff;
+  letter-spacing: 1px;
+  margin: 0 auto 18px auto;
+  text-shadow: 15px 15px 10px #000;
+}
+
+/*-----INTRO-----*/
+header .banner-text h3 {
+  font-size: 20px;
+  color: #fff;
+  margin: 0 auto;
+  padding-top: 30px;
+  width: 75%;
+  font-weight: 100;
+  text-shadow: 15px 15px 10px #000;
+}
+
+/*styling for links, e.g.*/
+header .banner-text h3 span,
+header .banner-text h3 a {
+  color: #fff;
+}
+
+/*CANT SEE THE HORIZONTAL LINE!!*/
+header .banner-text hr {
+  width: 60%;
+  margin: 18px auto 24px auto;
+  /*red-green-blue-alpha (opaque)*/
+  border-color: #2f2d2e;
+  border-color: rgba(150, 150, 150, 0.1);
+}
+
+/*---------------------------------------SOCIAL----------------------------------------*/
+header .social {
+  display: flex;
+  margin: 72px 0;
+  padding: 0;
+}
+header .social li {
+  flex: auto;
+  list-style: none;
+  color: #fff;
+}
+
+header .social img {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border: 5px solid #fff;
+  border-radius: 10%;
+}
+
+/*how to use :hover on images???*/

@@ -41,7 +41,7 @@ export default function Header() {
         <div className="row banner">
           <div className="banner-text">
             <h1 className="responsive-headline"> {data.name}</h1>
-            <h3 style={{ color: "#fff", fontFamily: "sans-serif " }}>
+            <h3 style={{ color: "#fff", fontFamily: "PT Sans" }}>
               {data.role}
               {data.roleDescription}
             </h3>
@@ -53,7 +53,7 @@ export default function Header() {
                 </a>
               </li>
               <li>
-                <a href="https://github.com/julialearnscoding">
+                <a href="https://github.com/juliakaltenegger">
                   <img src={githubLogo} alt="Github Logo" />
                 </a>
               </li>

@@ -1,7 +1,7 @@
 import React from "react";
 
 let data = {
-  linkedinId: "julia-e-kaltenegger"
+  linkedinId: "julia-e-kaltenegger",
 };
 
 export default function ContactUs() {
@@ -15,7 +15,12 @@ export default function ContactUs() {
       <div className="row">
         <aside className="eigth columns footer-widgets">
           <div className="widget">
-            <h4>LinkedIn: {data.linkedinId}</h4>
+            <h4>
+              LinkedIn:{" "}
+              <a href="https://www.linkedin.com/in/julia-e-kaltenegger/">
+                {data.linkedinId}
+              </a>
+            </h4>
           </div>
         </aside>
       </div>
