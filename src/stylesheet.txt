@@ -1,0 +1,11 @@
+ color: #11abb0;
+türkis/hellblau
+
+
+  color: #ff008c;
+pink --> visited nav
+
+ background-color: rgba(29, 88, 92, 0.9) 
+ petrol --> hover nav
+
+ background-color: rgba(9, 23, 34, 0.9) --> active nav

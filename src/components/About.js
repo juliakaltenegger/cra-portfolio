@@ -4,17 +4,13 @@ import profilePic from "./profile-pic.jpg";
 let data = {
   name: "Julia E. Kaltenegger",
   address: "Vienna, Austria",
-  email: "Email: julia.e.kaltenegger@gmail.com"
+  email: "Email: julia.e.kaltenegger@gmail.com",
 };
 
 export default function About() {
   return (
     <section id="about">
       <div className="row">
-        <div className="three columns">
-          <img className="profile-pic" src={profilePic} alt="" />
-        </div>
-
         <div className="nine columns main-col">
           <h2>About Me</h2>
           <p>
@@ -24,7 +20,9 @@ export default function About() {
             creating a competitive advantage in order to advance in my career as
             a UX / UI designer."
           </p>
-
+          <div className="three columns">
+            <img className="profile-pic" src={profilePic} alt="" />
+          </div>
           <div className="row">
             <div className="columns contact-details">
               <h2>Contact Details</h2>

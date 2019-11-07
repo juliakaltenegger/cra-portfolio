@@ -50,39 +50,13 @@ header .scrolldown a:hover {
 /* c. About Section
 /* ------------------------------------------------------------------ */
 
-#about {
-  background: #ffffff;
-  padding-top: 96px;
-  padding-bottom: 66px;
-  overflow: hidden;
-}
-
-#about a,
-#about a:visited {
-  color: #4f4e57;
-}
-#about a:hover,
-#about a:focus {
-  color: #11abb0;
-}
-
 #about h2 {
   font-size: 22px;
   text-transform: uppercase;
   color: #4f4e57;
   margin-bottom: 12px;
 }
-#about p {
-  line-height: 30px;
-  color: #4f4e57;
-  color: ;
-}
-#about .profile-pic {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  border-radius: 100%;
-}
+
 #about .contact-details {
   width: 41.66667%;
 }

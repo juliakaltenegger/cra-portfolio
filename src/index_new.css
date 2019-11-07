@@ -51,7 +51,7 @@ header {
 #nav-wrap ul,
 #nav-wrap li,
 #nav-wrap a {
-  margin: 0;
+  margin: 0 0 3px 0;
   padding: 0;
   border: none;
   outline: none;
@@ -63,6 +63,7 @@ header {
   font-weight: 900;
   letter-spacing: 2.5px;
   text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.3);
 
   position: fixed;
   left: 0;
@@ -103,13 +104,13 @@ header {
 }
 
 #nav li a:hover {
-  background-color: rgba(9, 23, 34, 0.9) !important;
+  background-color: rgba(0, 0, 0, 0.5) !important;
   border-radius: 20px;
 }
 
 /*:active will only be applied when placed after :hover in code!!!*/
 #nav li a:active {
-  background-color: #1d585c !important;
+  background-color: rgba(9, 23, 34, 0.9) !important;
 }
 /*XXXXXXXXXXX--selection of "current" is not correct--XXXXXXXXX*/
 #nav li.current a {
@@ -181,3 +182,49 @@ header .social img {
 }
 
 /*how to use :hover on images???*/
+
+/* ------------------------------------------------------------------ABOUT------------------------------------------------------------------ */
+
+#about {
+  background: #ffffff;
+  padding-top: 96px;
+  padding-bottom: 66px;
+  overflow: hidden;
+}
+
+#about .row {
+  display: flex;
+  flex-direction: row;
+}
+
+#about .profile-pic {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: 10%;
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+}
+
+#about h2 {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #4f4e57;
+  margin-bottom: 12px;
+}
+
+#about p {
+  line-height: 30px;
+  color: #4f4e57;
+  width: 50%;
+}
+
+#about a,
+#about a:visited {
+  color: #4f4e57;
+}
+#about a:hover,
+#about a:focus {
+  color: #ff008c;
+}
